@@ -8,6 +8,10 @@ use App\Http\Controllers\AdvertsController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\StoryController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\BenefitController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SubscriberController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,15 +22,6 @@ use App\Http\Controllers\CompanyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -41,3 +36,7 @@ Route::get('/advertisements',[AdvertsController::Class,'viewAdverts'])->name('Ad
 Route::get('/about',[AboutController::Class,'aboutInformation'])->name('About');
 Route::get('/inspiring-stories',[StoryController::Class,'stories'])->name('Inspiring Stories');
 Route::get('/licensed-companies',[CompanyController::Class,'getCompany'])->name('Company');
+Route::get('/articles',[ArticleController::Class,'getArticle'])->name('Articles');
+Route::get('/benefits',[BenefitController::Class,'getBenefit'])->name('Benefits');
+Route::get('/projects',[ProjectController::Class,'getProject'])->name('Projects');
+Route::get('/subscribers',[SubscriberController::Class,'getSubscriber'])->name('Subscribers');
