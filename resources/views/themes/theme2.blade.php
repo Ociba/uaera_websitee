@@ -7,6 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         @include('theme2-front-layout.css')
     <body>
+    <script src="//code.tidio.co/09qppohxl1p0i82npb9r0mqxv6xra6ll.js" async></script>
         <!-- ======= Header ======= -->
         <header id="header" class="header fixed-top">
             @include('theme2-front-layout.menu')

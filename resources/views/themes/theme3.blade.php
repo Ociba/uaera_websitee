@@ -8,6 +8,7 @@
         @include('theme3-front-layout.css')
     </head>
     <body>
+    <script src="//code.tidio.co/09qppohxl1p0i82npb9r0mqxv6xra6ll.js" async></script>
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
             @include('theme3-front-layout.menu')
