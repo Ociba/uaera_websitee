@@ -6,6 +6,27 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
         @include('theme1-front-layout.css')
+        <style>
+        .news {
+            width: 200px
+        }
+
+        .news-scroll a {
+            text-decoration: none;
+            color:blue;
+        }
+
+        .dot {
+            height: 6px;
+            width: 6px;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-top: 2px !important;
+            background-color: rgb(207, 23, 23);
+            border-radius: 50%;
+            display: inline-block
+        }
+        </style>
     </head>
 
     <body>
@@ -27,7 +48,16 @@
 
                 <!-- ======= Cliens Section ======= -->
                 <section id="cliens" class="cliens section-bg">
-                @include('theme1-front-layout.partners')
+               <div class="container mt-2 m-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+                                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-cente bg-danger py-2 text-white px-1 news"><span class="d-flex align-items-center">&nbsp;Uaera Breaking News</span></div>
+                                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a> <span class="dot"></span> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </a> <span class="dot"></span> <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse </a> </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </section><!-- End Cliens Section -->
 
                 <!-- ======= About Us Section ======= -->
