@@ -9,7 +9,8 @@
     </head>
 
     <body>
-
+    <script src="//code.tidio.co/09qppohxl1p0i82npb9r0mqxv6xra6ll.js" async></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=174468550314600&autoLogAppEvents=1" nonce="RtPqCkj5"></script>
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top ">
             @include('theme1-front-layout.menu')
