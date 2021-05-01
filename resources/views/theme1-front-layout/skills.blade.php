@@ -18,7 +18,7 @@ body {
 #marquee div {
 	display: inline-block; 
 	height: 12rem; 
-	width: 30rem;
+	width: 50rem;
 	position: relative;
 }
 #marquee div:first-of-type { 
@@ -57,24 +57,6 @@ body {
 	transform: translateX(30rem);
 	animation: rightcrawl 10s linear infinite;
 }
-form { 
-  margin-top: 3rem; 
-  background: #334;
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
-}
-input[type="text"] { 
-  padding: .5rem; 
-  font-size: 1.2rem; 
-  width: 22rem; 
-}
-input[type="text"] {
-  padding: .5rem;
-}
-label {
-  margin: 1rem;
-}
 @media all and (max-width: 993px) {
   #marquee {
     perspective: none;
@@ -104,28 +86,28 @@ label {
         <div class="skills-content">
 
             <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
+            <span class="skill">No.of Companies <i class="val">100%</i></span>
             <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </div>
 
             <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
+            <span class="skill">No. of Uaera Members <i class="val">90%</i></span>
             <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </div>
 
             <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
+            <span class="skill">Services Offered <i class="val">75%</i></span>
             <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             </div>
 
             <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <span class="skill">Domestic Workers <i class="val">55%</i></span>
             <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
