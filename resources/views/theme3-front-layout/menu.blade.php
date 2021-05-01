@@ -1,10 +1,12 @@
 <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-    <h1><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:50px;"><a href="/"> Uaera</a></h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <h1><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:50px;"><a href="/"></a></h1>
+    
     </div>
+    <marquee width="40%" direction="left" height="25px" scrollamount="4" class="text-white">
+      <p>Welcome to Uaera Curbing Unemployment in Uganda.</p>
+    </marquee>
 
     <nav id="navbar" class="navbar">
     <ul>

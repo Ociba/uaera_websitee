@@ -1,9 +1,12 @@
 <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <a href="index.html" class="logo d-flex align-items-center">
+    <a href="/" class="logo d-flex align-items-center">
     <img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:50px;">
-    <span>Uaera</span>
+   
     </a>
+    <marquee width="40%" direction="left" height="25px" scrollamount="4" class="text-blue">
+      <p>Welcome to Uaera Curbing Unemployment in Uganda.</p>
+    </marquee>
 
     <nav id="navbar" class="navbar">
     <ul>
