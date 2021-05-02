@@ -72,10 +72,9 @@ body {
 </style>
 <div class="container" data-aos="fade-up">
     <div class="row">
-        <div id="marquee" class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <div><span>UAERA UGANDA: ZOMBIE OUTBREAK</span></div>
-            <div aria-hidden="true"><span>UAERA UGANDA: ZOMBIE OUTBREAK</span></div>
-        </div>
+    <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="{{ asset('theme1/assets/img/skills.png')}}" class="img-fluid" alt="">
+          </div>
         <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
         <h3>Voluptate dignissimos provident quasi corporis voluptates</h3>
         <p class="fst-italic">

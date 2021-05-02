@@ -15,7 +15,9 @@
             text-decoration: none;
             color:blue;
         }
-
+        .bg-danger {
+            border-radius: 30px 25px 50px;
+        }
         .dot {
             height: 6px;
             width: 6px;
