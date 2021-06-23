@@ -6,7 +6,7 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
+            <form action="/" method="get">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
@@ -19,13 +19,13 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+            <h3><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:40px;"></h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+            <i class="fa fa-home"></i> BMK House Suite 411 – 4th Floor, <br>
+            P.O.BOX 25669 Kampala<br>
+            Uganda <br><br>
+              <i class="fa fa-phone"></i><strong> Phone:</strong> +256 788 708000<br>
+              <i class="fa fa-envelope"></i><strong> Email:</strong> uaeraug@gmail.com<br>
             </p>
           </div>
 
@@ -41,13 +41,13 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Countires</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">U.A.C</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Abu Dhabi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Qatar Dubai</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Saudi Arabia</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Bahrain, Jordan</a></li>
             </ul>
           </div>
 
@@ -72,11 +72,7 @@
         &copy; Copyright  {{ date('Y')}}<strong><span> UEARA</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">JAAJA</a>
+        Designed by <a href="https://jaajaltd.com">JAAJA</a>
       </div>
     </div>
   </footer>

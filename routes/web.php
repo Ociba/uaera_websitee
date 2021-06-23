@@ -40,3 +40,5 @@ Route::get('/articles',[ArticleController::Class,'getArticle'])->name('Articles'
 Route::get('/benefits',[BenefitController::Class,'getBenefit'])->name('Benefits');
 Route::get('/projects',[ProjectController::Class,'getProject'])->name('Projects');
 Route::get('/subscribers',[SubscriberController::Class,'getSubscriber'])->name('Subscribers');
+Route::get('/about-more', function() { return view('themes.about');})->name('About');
+Route::get('/view-portfolio', function() { return view('themes.portfolio');})->name('Portfolio');

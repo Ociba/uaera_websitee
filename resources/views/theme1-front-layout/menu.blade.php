@@ -1,11 +1,10 @@
 <div class="container d-flex align-items-center">
-<h1 class="logo me-auto mr-1"><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:50px;"><a href="/"></a></h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+<h6 class="logo me-auto mr-1"><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:50px; max-height:50px;"><a href="/"></a>
     
-    <marquee width="40%" direction="right" height="25px" scrollamount="4" class="text-white">
-      <p>Welcome to Uaera Curbing Unemployment.</p>
+    <marquee width="70%" direction="left" height="25px" scrollamount="4" class="text-white">
+     <h6 style="text-transform: capitalize;">Welcome to Uaera Curbing Unemployment</h6>
     </marquee>
+</h6>
     <nav id="navbar" class="navbar">
     <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>

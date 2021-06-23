@@ -11,6 +11,7 @@ class AdvertsController extends Controller
     /**
      * This fuction returns adverts view
      */
+    
     protected function viewAdverts(){
         return view('admin.adverts');
     }

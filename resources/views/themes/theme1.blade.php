@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         @include('theme1-front-layout.css')
+        
         <style>
+            /*news*/
             @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
             a {
             color: #fff;
@@ -20,12 +22,15 @@
             .news {
             width: 80%;
             padding: 0 2%
+
             }
-            .title {
-            width: 15%;
-            text-align: center;
+            .title {  
             background: #c81c1c;
-            position: relative
+            position: relative;
+            text-align:center;
+            height:75%;
+            padding: 5px 0px 5px;
+          
             }
             .dot {
             height: 6px;
@@ -40,16 +45,16 @@
             .title:after {
             position: absolute;
             content: "";
-            right: -12%;
+            right: -80%;
             border-left: 20px solid #c81c1c;
             border-top: 28px solid transparent;
-            border-right: 20px solid transparent;
+            border-right: 15px solid transparent;
             border-bottom: 21px solid transparent;
-            top: 0px
+            top: -7px
             }
             .title h5 {
             font-size: 18px;
-            margin: 4% 0;
+            margin: 4% 2%;
             color:#ffffff;
             }
             .news marquee {
@@ -60,7 +65,7 @@
             .news-content p {
             margin-right: 41px;
             display: inline;
-            color:red;
+            padding:20px;
             }
             @keyframes leftcrawl {
             to { transform: translateX(-100rem); }
@@ -89,18 +94,20 @@
         <!-- End Header -->
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="d-flex align-items-center">
-            @include('theme1-front-layout.slider')
+            @include('theme1-front-layout.animation')
         </section>
+        
         <!-- End Hero -->
         <main id="main">
             <!-- ======= Cliens Section ======= -->
-            <section id="cliens" class="cliens section-bg">
+            <section id="cliens" class="cliens">
                 <div class="container mt-2 pb-3 m-0">
-                    <div class="row">
+                    <div class="row" data-aos="zoom-in">
                         <div class="col-md-12">
                             <div class="ticker">
                                 <div class="title">
-                                    <h5>News Update</h5>
+                                    <h5>News
+                                    </h5>
                                 </div>
                                 <div class="news">
                                     <marquee class="news-content">
@@ -120,23 +127,23 @@
             </section>
             <!-- End Cliens Section -->
             <!-- ======= About Us Section ======= -->
-            <section id="about" class="about">
+            <section id="about" class="about section-bg">
                 @include('theme1-front-layout.about')
             </section>
             <!-- End About Us Section -->
             <!-- ======= Why Us Section ======= -->
-            <section id="why-us" class="why-us section-bg">
-                @include('theme1-front-layout.why-us')
+            <section id="contact2" class="contact2">
+                @include('theme1-front-layout.jobs-abroad')
             </section>
             <!-- End Why Us Section -->
             <!-- ======= Skills Section ======= -->
-            <section id="skills" class="skills">
+            <section id="skills" class="skills section-bg">
                 @include('theme1-front-layout.skills')
             </section>
             <!-- End Skills Section -->
             <!-- ======= Services Section ======= -->
-            <section id="services" class="services section-bg">
-                @include('theme1-front-layout.services')
+            <section id="services" class="services">
+                @include('theme1-front-layout.achievements')
             </section>
             <!-- End Services Section -->
             <!-- ======= Cta Section ======= -->
@@ -154,16 +161,6 @@
                 @include('theme1-front-layout.team')
             </section>
             <!-- End Team Section -->
-            <!-- ======= Pricing Section ======= -->
-            <section id="pricing" class="pricing">
-                @include('theme1-front-layout.price')
-            </section>
-            <!-- End Pricing Section -->
-            <!-- ======= Frequently Asked Questions Section ======= -->
-            <section id="faq" class="faq section-bg">
-                @include('theme1-front-layout.faq')
-            </section>
-            <!-- End Frequently Asked Questions Section -->
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact">
                 @include('theme1-front-layout.contact')
