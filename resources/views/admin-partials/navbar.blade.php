@@ -1,12 +1,12 @@
 <nav class="navbar header-navbar pcoded-header">
     <div class="navbar-wrapper">
 
-        <div class="navbar-logo">
+        <div class="navbar-logo text-center">
             <a class="mobile-menu" id="mobile-collapse" href="#!">
                 <i class="feather icon-menu"></i>
             </a>
             <a href="index.html">
-                <img class="img-fluid" src="{{ asset('admin/design/files/assets/images/logo.png')}}" alt="Theme-Logo" />
+            <img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; max-height:40px;">
             </a>
             <a class="mobile-options">
                 <i class="feather icon-more-horizontal"></i>
@@ -33,10 +33,12 @@
             <ul class="nav-right">
                 <li class="header-notification">
                     <div class="dropdown-primary dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown">
+                        {{--
+                            <div class="dropdown-toggle" data-toggle="dropdown">
                             <i class="feather icon-bell"></i>
                             <span class="badge bg-c-pink">5</span>
                         </div>
+                        --}}
                         <ul class="show-notification notification-view dropdown-menu"
                             data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                             <li>
@@ -87,23 +89,25 @@
                 </li>
                 <li class="header-notification">
                     <div class="dropdown-primary dropdown">
-                        <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
+                        {{--
+                            <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
                             <i class="feather icon-message-square"></i>
                             <span class="badge bg-c-green">3</span>
                         </div>
+                        --}}
                     </div>
                 </li>
                 <li class="user-profile header-notification">
                     <div class="dropdown-primary dropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="{{ asset('admin/design/files/assets/images/avatar-4.jpg')}}" class="img-radius"
-                                alt="User-Profile-Image">
+                        <img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; max-height:40px;">
                             <span>Ociba James</span>
                             <i class="feather icon-chevron-down"></i>
                         </div>
                         <ul class="show-notification profile-notification dropdown-menu"
                             data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                            <li>
+                            {{--
+                                <li>
                                 <a href="#!">
                                     <i class="feather icon-settings"></i> Settings
                                 </a>
@@ -113,8 +117,9 @@
                                     <i class="feather icon-user"></i> Profile
                                 </a>
                             </li>
+                            --}}
                             <li>
-                                <a href="/logout">
+                                <a href="/log-out">
                                     <i class="feather icon-log-out"></i> Logout
                                 </a>
                             </li>

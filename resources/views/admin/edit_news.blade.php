@@ -35,7 +35,7 @@
                                                         @foreach($edit_news as $news)
                                                         <form action="/update-news/{{$news->id}}" method="get">
                                                             <div class="input-group input-group-button">
-                                                                <input type="text" class="form-control" name="news" value="{{$news->news}}">
+                                                                <input type="text" class="form-control" name="news" value="{{$news->news}}" required>
                                                                 <button id="create-task"
                                                                     class="btn btn-primary input-group-addon">Update
                                                                     News</button>

@@ -57,15 +57,17 @@
                                                             <h6 class="job-card-desc">Image Description</h6>
                                                             <p class="text-muted">{{$gallery->title}}</p>
                                                             <div class="job-meta-data"><i
-                                                                    class="icofont icofont-safety"></i>{{$gallery->created_at}}</div>
-                                                            <div class="job-meta-data"><i
-                                                                    class="icofont icofont-university"></i>
+                                                                    class="icofont icofont-time"></i>{{$gallery->created_at}}</div>
+                                                            <div class="job-meta-data">
+                                                                   <a href="/edit-portifolio/{{$gallery->id}}" button
+                                                                        data-toggle="tooltip"
+                                                                        title="edit"
+                                                                        class="btn btn-success waves-effect waves-light">Edit
+                                                                    </button></a>       
                                                                     <a href="/delete-portifolio/{{$gallery->id}}" button
                                                                         data-toggle="tooltip"
                                                                         title="delete"
-                                                                        class="btn btn-danger waves-effect waves-light">
-                                                                        <span
-                                                                            class="fa fa-trash-o"></span>
+                                                                        class="btn btn-danger waves-effect waves-light">Delete
                                                                     </button></a>
                                                             </div>
                                                         </div>
@@ -108,8 +110,18 @@
                 <div class="modal-body">
                 <form action="/create-portifolio" method="post" enctype="multipart/form-data">
                     @csrf
-                    <p><input type="text" class="form-control" name="title"></p>
-                    <p><input type="file" class="form-control" name="image"></p>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="inputFirstname">Title</label>
+                            <input type="text"name="title" class="form-control" id="inputFirstname" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="inputFirstname">Contact</label>
+                            <input type="file" name="image" class="form-control" id="inputFirstname" placeholder="" required>
+                        </div>
+                    </div>
                     <div class="text-center">
                     <button type="submit"
                         class="btn btn-primary waves-effect waves-light ">Save

@@ -35,7 +35,7 @@
                                                           @foreach($edit as $achievements)
                                                         <form action="/update-news/{{$achievements->id}}" method="get">
                                                             <div class="input-group input-group-button">
-                                                                <input type="text" class="form-control" name="achievement" value="{{$achievements->achievement}}">
+                                                                <input type="text" class="form-control" name="achievement" value="{{$achievements->achievement}}" required>
                                                                 <button id="create-task"
                                                                     class="btn btn-primary input-group-addon">Update Now</button>
                                                             </div>

@@ -9,6 +9,9 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Team;
+use DB;
+use News;
 
 class User extends Authenticatable
 {
@@ -58,4 +61,32 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+    /** 
+     * This function counts the Teams Members
+    */
+    public function countMembers(){
+        $count_all_team_members =DB::table('teams')->count();
+        return $count_all_team_members;
+    }
+    /** 
+     * This function counts the current news Number
+    */
+    public function countNews(){
+        $count_news =DB::table('news')->count();
+        return $count_news;
+    }
+    /** 
+     * This function counts the number of Users
+    */
+    public function countUsers(){
+        $count_users =DB::table('users')->count();
+        return $count_users;
+    }
+    /** 
+     * This function counts current Achievements
+    */
+    public function countAchievements(){
+        $count_achievements =DB::table('achievements')->count();
+        return $count_achievements;
+    }
 }

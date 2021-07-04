@@ -34,7 +34,7 @@
                                                       <form action="/create-news" method="get">
                                                             <div class="input-group input-group-button">
                                                                 <input type="text" class="form-control"
-                                                                    placeholder="Add news Now" name="news">
+                                                                    placeholder="Add news Now" name="news" required>
                                                                 <button id="create-task"
                                                                     class="btn btn-primary input-group-addon">Add
                                                                     News</button>

@@ -31,18 +31,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/">About</a></li>
-          <li><a class="nav-link scrollto" href="/">Services</a></li>
-          <li><a class="nav-link   scrollto" href="/">Team</a></li>
-          <li><a class="nav-link scrollto" href="/">Careers</a></li>
-          <li><a class="nav-link scrollto" href="/">List of Uaera Members</a></li>
-          <li class="dropdown"><a href="#"><span>Themes</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="/theme-two">Theme2</a></li>
-              <li><a href="/theme-three">Theme3</a></li>
-            </ul>
-          </li>
+        <li><a class="nav-link scrollto " href="/">HOME</a></li>
+          <li><a class="nav-link scrollto" href="/about-more">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="/">ACHIEVEMENTS</a></li>
+          <li><a class="nav-link scrollto" href="/view-portfolio">GALLERY</a></li>
+          <li><a class="nav-link scrollto" href="/">TEAM</a></li>
+          <li><a class="nav-link scrollto" href="/">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

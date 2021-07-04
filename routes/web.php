@@ -12,6 +12,7 @@ use App\Http\Controllers\BenefitController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\AuthenticationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +40,7 @@ Route::get('/team',[TeamController::Class,'getTeam'])->name('Team');
 Route::get('/licensed-companies',[CompanyController::Class,'getCompany'])->name('Company');
 Route::get('/benefits',[BenefitController::Class,'getBenefit'])->name('Benefits');
 Route::get('/about-more', function() { return view('themes.about');})->name('About');
-Route::get('/view-portfolio', function() { return view('themes.portfolio');})->name('Portfolio');
+Route::get('/view-portfolio',[FrontController::Class, 'getPortifolioImages'])->name('Portfolio');
 Route::get('/create-news', [NewsController::Class,'createNews']);
 Route::get('/edit-news/{id}',[NewsController::Class,'editNews']);
 Route::get('/update-news/{id}',[NewsController::Class, 'updateNews']);
@@ -55,7 +56,11 @@ Route::get('/delete-achievement/{id}',[AchievementsController::Class,'deleteAchi
 
 Route::post('/create-portifolio',[PortifolioController::Class,'createPotifolio']);
 Route::get('/delete-portifolio/{id}',[PortifolioController::Class,'deletePotifolio']);
+Route::get('/edit-portifolio/{id}',[PortifolioController::Class,'editPortifolio']);
+Route::get('/update-portifolio/{id}',[PortifolioController::Class,'updatePotifolio']);
 Route::post('/create-team-member',[TeamController::Class,'createPotifolio']);
 Route::get('/edit_team/{id}',[TeamController::Class,'editTeam']);
 Route::get('/update-member/{id}',[TeamController::Class, 'updateTeam']);
 Route::get('/delete-member/{id}', [TeamController::Class, 'deleteTeam']);
+
+Route::get('/log-out',[AuthenticationController::Class, 'logoutUser']);

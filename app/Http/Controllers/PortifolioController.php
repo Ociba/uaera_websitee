@@ -40,7 +40,8 @@ class PortifolioController extends Controller
         Portifolio::where('id',$id)->update(array(
             'title' =>request()->title
         ));
-        return redirect()->back()->with('msg','You have Updated  Info Successfully');
+        //return redirect()->back()->with('msg','You have Updated  Info Successfully');
+        return redirect('/portifolio');
     }
     protected function deletePotifolio($id){
         Portifolio::where('id',$id)->delete();
