@@ -2,14 +2,14 @@
 
     <div class="section-title">
         <h2>Achievements</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>As a sector, increase in Uganda's foreign earning through remittances by Uganda workers abroad standing at USD 1.3BN globally and USD 700M for those working in the Middle East countries alone.</p>
     </div>
 
-    <div class="row" style="text-center;">
+    <div class="row text-justify-center" style="text-center;">
         <div class="col-xl-3 col-md-6 d-flex align-items-stretch mb-1" data-aos="zoom-in" data-aos-delay="100">
         <div class="icon-box">
             <div class="icon text-center"><img src="{{ asset('theme1/assets/img/loho.jpg')}}" style="border-radius:50%; width:50px; max-height:50px;"></div>
-            <p>UAERA – Growth from 9 members in 2012 to the Current 110 (One hundred and Ten) is commendable.</p>
+            <p>Acquisition of skills and capital that the returning ugandan migrant workers are ale to apply on the Uganda market.</p>
         </div>
         </div>
 
@@ -17,7 +17,7 @@
         <div class="icon-box">
             <div class="icon text-center"><img src="{{ asset('theme1/assets/img/loho.jpg')}}" style="border-radius:50%; width:50px; max-height:50px;"></div>
             {{--<h4><a href="">Sed ut perspici</a></h4>--}}
-            <p>The Secretariat’s capacity has been enhanced and made effective. The Secretariat’s capacity has been enhanced and made effective.</p>
+            <p>Grown in the standard of living for the families of those working abroad because of better salaries being earned.</p>
         </div>
         </div>
 
@@ -25,7 +25,7 @@
         <div class="icon-box">
             <div class="icon text-center"><img src="{{ asset('theme1/assets/img/loho.jpg')}}" style="border-radius:50%; width:50px; max-height:50px;"></div>
             {{--<h4><a href="">Magni Dolores</a></h4>--}}
-            <p>The Reception Center is located in Entebbe with competent staff who provide counselling services to deserving candidates. These are people who return home and found to be in distress, irrespective of how they left the Country, they get counselling services and relevant treatment at the facility before they re-settle back in society.</p>
+            <p>The number of members has gradually increased from 13 members in 2013 to 216 members in 2021.</p>
         </div>
         </div>
 
@@ -33,7 +33,7 @@
         <div class="icon-box">
             <div class="icon text-center"><img src="{{ asset('theme1/assets/img/loho.jpg')}}" style="border-radius:50%; width:50px; max-height:50px;"></div>
            {{--<h4><a href="">Nemo Enim</a></h4>--}}
-            <p>The Reception Center is located in Entebbe with competent staff who provide counselling services to deserving candidates. These are people who return home and found to be in distress, irrespective of how they left the Country, they get counselling services and relevant treatment at the facility before they re-settle back in society.</p>
+            <p>Establishment of a reception Center in Entebbe that offers Psychosocial support to returning Ugandan migrant workers irrespective of the country they are from.</p>
         </div>
         </div>
 

@@ -44,9 +44,8 @@
     <div class="section-title">
         <h2>About Us</h2>
     </div>
-    <div class="row content justify-center" style="text-align: justify;">
-        <div class="col-lg-6">
-            <p class="has-dropcap">
+    <div class="row content justify-center">
+        <p class="has-dropcap" style="text-align: justify;">
                 The Uganda Association of External Recruitment
                 Agencies (UAERA) started in 2013. Currently it
                 has a membership of 116 members as per 19th
@@ -63,27 +62,29 @@
                 over the world. The major destination countries are in the
                 Middle East, where the economies are sustainable and therefore creating jobs.
             </p>
+        <div class="col-lg-4 text-center">
             <p>
             <h3>OUR VISION</h3>
             To play a leading role in increasing employment opportunities in Uganda.
             </p>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0">
-            
-        
+        <div class="col-lg-4 text-center">
             <p>
             <h3>OUR MISSION</h3>
             To actively source and secure external employment for majority of the youth of Uganda that is unemployed
             within the country
             </p>
-            <p>
-            <h3>OUR VALUES</h3>
-            Maintaining ethical standards and professionalism.</p>
-            <p>Promoting unity, development and welfare of
-                everyone
-            </p>
-            <a href="/about-more" class="btn-learn-more text-center">Read More</a>
-            
         </div>
+        <div class="col-lg-4 text-center">
+        <p>
+            <h3>OUR VALUES</h3>
+            Maintaining ethical standards and professionalism,Promoting unity,development and welfare of
+                everyone</p>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+        <p class="text-center"><a href="/about-more" class="btn-learn-more text-center">Read More</a></p>
+        </div>
+        <div class="col-lg-4"></div>
     </div>
 </div>

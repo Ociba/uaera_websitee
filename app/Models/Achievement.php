@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class Achievement extends Model
 {
     use HasFactory;
-    protected $fillable =['news','created_by'];
+    protected $fillable=['achievement','created_by'];
 }

@@ -40,6 +40,7 @@
             margin-top: 2px !important;
             background-color: rgb(207, 23, 23);
             border-radius: 50%;
+            color:#ffffff;
             display: inline-block
             }
             .title:after {
@@ -109,17 +110,16 @@
                                     <h5>News
                                     </h5>
                                 </div>
+                                
                                 <div class="news">
                                     <marquee class="news-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                                        <span class="dot"></span> 
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto </p>
-                                        </span>
+                                    @foreach($get_news_for_front as $news)
+                                        <p>{{$news->news}}</p>
                                         <span class="dot"></span>
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam </p>
-                                        </span>
+                                        @endforeach
                                     </marquee>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

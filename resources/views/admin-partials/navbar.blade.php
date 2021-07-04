@@ -109,12 +109,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="user/profile">
+                                <a href="#!">
                                     <i class="feather icon-user"></i> Profile
                                 </a>
                             </li>
                             <li>
-                                <a href="/admin/logout">
+                                <a href="/logout">
                                     <i class="feather icon-log-out"></i> Logout
                                 </a>
                             </li>

@@ -22,40 +22,25 @@
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
-                                        @include('admin-partials.messages')
+                                    @include('admin-partials.messages')
                                         <div class="row">
                                         <div class="col-xl-12">
                                                 <!-- To Do Card List card start -->
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        <h5>News</h5>
+                                                        <h5>Edit Achievements</h5>
                                                     </div>
                                                     <div class="card-block">
-                                                      <form action="/create-news" method="get">
+                                                        <section id="task-container">
+                                                          @foreach($edit as $achievements)
+                                                        <form action="/update-news/{{$achievements->id}}" method="get">
                                                             <div class="input-group input-group-button">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Add news Now" name="news">
+                                                                <input type="text" class="form-control" name="achievement" value="{{$achievements->achievement}}">
                                                                 <button id="create-task"
-                                                                    class="btn btn-primary input-group-addon">Add
-                                                                    News</button>
+                                                                    class="btn btn-primary input-group-addon">Update Now</button>
                                                             </div>
                                                        </form>
-                                                        <section id="task-container">
-                                                            <ul >
-                                                                @foreach($get_news_for_admin as $news)
-                                                                <li>
-                                                                    <p>{{$news->news}}</p>
-                                                                    <p class="text-center">
-                                                                   <a href="/edit-news/{{$news->id}}" button 
-                                                                    class="btn btn-primary m-b-0" >Edit
-                                                                    </button></a>
-                                                                    <a href="/delete-news/{{$news->id}}"button
-                                                                    class="btn btn-danger m-b-0">Delete
-                                                                    </button></a>
-                                                                 </p>
-                                                                </li>
-                                                                @endforeach
-                                                            </ul>
+                                                       @endforeach
                                                         </section>
                                                     </div>
                                                 </div>
