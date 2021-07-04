@@ -13,7 +13,7 @@ class PortifolioController extends Controller
      * This function gets articles from the databse
      */
     protected function getPortifolio(){
-        $get_portifolio =Portifolio::get();
+        $get_portifolio =Portifolio::latest()->get();
         return view('admin.portifolio', compact('get_portifolio'));
     }
     protected function createPotifolio(){

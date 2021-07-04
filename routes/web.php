@@ -13,6 +13,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\HomeCOntroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +29,13 @@ use App\Http\Controllers\AuthenticationController;
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
+
+
+
 Route::get('/',[FrontController::Class,'getFrontPage']);
-//Route::get('/', function() { return view('themes.theme1');});
 Route::get('/theme-two', function() { return view('themes.theme2');});
 Route::get('/theme-three', function() { return view('themes.theme3');});
-Route::get('/dashboard',function() { return view('dashboard');})->name('Dashboard');
+Route::get('/dashboard',[HomeCOntroller::Class,'getDashboard'])->name('Dashboard');
 Route::get('/news',[NewsController::Class,'index'])->name('News');
 Route::get('/achievements',[AchievementsController::Class,'getAchievements'])->name('Adverts');
 Route::get('/about',[AboutController::Class,'aboutInformation'])->name('About');

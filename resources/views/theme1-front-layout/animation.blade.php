@@ -40,12 +40,12 @@
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                                src="{{ asset('theme1/assets/img/img4.png')}}" width="800" height="400"
+                                src="{{ asset('theme1/assets/img/img4.png')}}" width="800" height="350"
                                 alt="Third slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                                src="{{ asset('theme1/assets/img/img110.png')}}"  width="800" height="400"
+                                src="{{ asset('theme1/assets/img/img110.png')}}"  width="800" height="100"
                                 alt="Fourth slide">
                         </div>
                     </div>

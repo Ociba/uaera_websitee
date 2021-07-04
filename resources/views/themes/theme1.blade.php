@@ -33,8 +33,8 @@
           
             }
             .dot {
-            height: 6px;
-            width: 6px;
+            height: 10px;
+            width: 10px;
             margin-left: 3px;
             margin-right: 3px;
             margin-top: 2px !important;
