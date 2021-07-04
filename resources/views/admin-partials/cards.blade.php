@@ -3,8 +3,8 @@
         <div class="card-block">
             <div class="row align-items-end">
                 <div class="col-8">
-                    <h4 class="text-white">$30200</h4>
-                    <h6 class="text-white m-b-0">All Earnings</h6>
+                    <h4 class="text-white">{{auth()->user()->countMembers()}}</h4>
+                    <h6 class="text-white m-b-0">Number of Members</h6>
                 </div>
                 <div class="col-4 text-right">
                     <canvas id="update-chart-1" height="50"></canvas>
@@ -23,8 +23,8 @@
         <div class="card-block">
             <div class="row align-items-end">
                 <div class="col-8">
-                    <h4 class="text-white">290+</h4>
-                    <h6 class="text-white m-b-0">Page Views</h6>
+                    <h4 class="text-white">{{auth()->user()->countNews()}}</h4>
+                    <h6 class="text-white m-b-0">Trending News</h6>
                 </div>
                 <div class="col-4 text-right">
                     <canvas id="update-chart-2" height="50"></canvas>
@@ -43,8 +43,8 @@
         <div class="card-block">
             <div class="row align-items-end">
                 <div class="col-8">
-                    <h4 class="text-white">145</h4>
-                    <h6 class="text-white m-b-0">Task Completed</h6>
+                    <h4 class="text-white">{{auth()->user()->countUsers()}}</h4>
+                    <h6 class="text-white m-b-0">Number of Users</h6>
                 </div>
                 <div class="col-4 text-right">
                     <canvas id="update-chart-3" height="50"></canvas>
@@ -63,8 +63,8 @@
         <div class="card-block">
             <div class="row align-items-end">
                 <div class="col-8">
-                    <h4 class="text-white">500</h4>
-                    <h6 class="text-white m-b-0">Downloads</h6>
+                    <h4 class="text-white">{{auth()->user()->countAchievements()}}</h4>
+                    <h6 class="text-white m-b-0">Current Achievements</h6>
                 </div>
                 <div class="col-4 text-right">
                     <canvas id="update-chart-4" height="50"></canvas>

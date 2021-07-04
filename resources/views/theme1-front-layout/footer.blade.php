@@ -3,12 +3,18 @@
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+          <div class="col-lg-6 footer-links">
+          <div class="section-title">
+            <h2 class="font-weight-900">Our Social Links</h2>
+            <p>Visit us through our social network links </p>
+             </div>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/uaeraug" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/UAERAUganda/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UCTUSeTOZIUdnc_NCFRVBjhw" class="instagram"><i class="bx bxl-youtube"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -16,53 +22,46 @@
 
     <div class="footer-top">
       <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+        <div class="row ">
+          <div class="col-lg-3 col-md-6 justify-content-center footer-contact">
+            <h3 class="text-center"><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:40px;"></h3>
+            <p class="text-center">
+            <i class="fa fa-home"></i> BMK House Suite 411 – 4th Floor, <br>
+            P.O.BOX 25669 Kampala<br>
+            Uganda <br><br>
+              <i class="fa fa-phone"></i><strong> Phone:</strong> +256 788 708000<br>
+              <i class="fa fa-envelope"></i><strong> Email:</strong> uaeraug@gmail.com<br>
             </p>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+          <div class="col-lg-3 col-md-6 justify-content-center footer-links">
+            <h4 class="text-center"> Useful Links</h4>
+            <div class="icon-box">
+            <p class="text-center"><a href="#"><span style="color:black;">Home</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">About Us</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Services</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Terms of Services</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Privacy Policy</span></a></p>
+             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
+          <div class="col-lg-3 col-md-6 justify-content-center footer-links">
+            <h4 class="text-center"> Countries</h4>
+            <div class="icon-box">
+            <p class="text-center"><a href="#"><span style="color:black;">U.A.C</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Abu Dhabi</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Qatar Dubai</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Saudi Arabia</span</a></p>
+            <p class="text-center"><a href="#"><span style="color:black;">Bahrain, Jordan</span></a></p>
+             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+            
+          <div class="col-lg-3 col-md-6 justify-content-center footer-links">
+            <h4 class="text-center"> Uganda Association of External Recruitment Agencies</h4>
+            <div class="icon-box">
+            <div class="icon text-center"><img src="{{ asset('theme1/assets/img/loho.jpg')}}" style="border-radius:50%; width:50px; max-height:50px;"></div>
+            <p class="text-center">Curbing Unemployment in Uganda citizens through securing external employment for majority of the youth of Uganda that is unemployed within the country</p>
+             </div>
           </div>
-
+            
         </div>
       </div>
     </div>
@@ -72,11 +71,7 @@
         &copy; Copyright  {{ date('Y')}}<strong><span> UEARA</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">JAAJA</a>
+        Designed by <a href="https://jaajaltd.com">JAAJA</a>
       </div>
     </div>
   </footer>

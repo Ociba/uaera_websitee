@@ -22,6 +22,7 @@
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
+                                        @include('admin-partials.messages')
                                         <div class="row">
                                         <div class="col-xl-12">
                                                 <!-- To Do Card List card start -->
@@ -30,42 +31,31 @@
                                                         <h5>News</h5>
                                                     </div>
                                                     <div class="card-block">
-                                                        <div class="input-group input-group-button">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Create your task list" name="task-insert">
-                                                            <button id="create-task"
-                                                                class="btn btn-primary input-group-addon">Add
-                                                                News</button>
-                                                        </div>
-                                                        <section id="task-container">
-                                                            <ul id="task-list">
-                                                                <li>
-                                                                    <p>Lorem Ipsum Dolor Sit Amet</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Lorem Ipsum Dolor Sit Amet</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Lorem Ipsum Dolor Sit Amet</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Lorem Ipsum Dolor Sit Amet</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Lorem Ipsum Dolor Sit Amet</p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>Lorem Ipsum Dolor Sit Amet</p>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="text-center">
-                                                                <button id="clear-all-tasks"
-                                                                    class="btn btn-primary m-b-0" type="button">Edit
-                                                                    </button>
-                                                                    <button id="clear-all-tasks"
-                                                                    class="btn btn-danger m-b-0" type="button">Delete
-                                                                    </button>
+                                                      <form action="/create-news" method="get">
+                                                            <div class="input-group input-group-button">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Add news Now" name="news" required>
+                                                                <button id="create-task"
+                                                                    class="btn btn-primary input-group-addon">Add
+                                                                    News</button>
                                                             </div>
+                                                       </form>
+                                                        <section id="task-container">
+                                                            <ul >
+                                                                @foreach($get_news_for_admin as $news)
+                                                                <li>
+                                                                    <p>{{$news->news}}</p>
+                                                                    <p class="text-center">
+                                                                   <a href="/edit-news/{{$news->id}}" button 
+                                                                    class="btn btn-primary m-b-0" >Edit
+                                                                    </button></a>
+                                                                    <a href="/delete-news/{{$news->id}}"button
+                                                                    class="btn btn-danger m-b-0">Delete
+                                                                    </button></a>
+                                                                 </p>
+                                                                </li>
+                                                                @endforeach
+                                                            </ul>
                                                         </section>
                                                     </div>
                                                 </div>

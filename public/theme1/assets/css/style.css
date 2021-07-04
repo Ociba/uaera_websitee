@@ -121,13 +121,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 #header .logo a {
@@ -135,7 +134,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
+  border-radius:50%; 
+  width:50px; 
 }
 
 /*--------------------------------------------------------------
@@ -368,11 +369,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 80vh;
-  background: #37517e;
-}
+
 
 #hero .container {
   padding-top: 72px;
@@ -436,6 +433,17 @@ h1, h2, h3, h4, h5, h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+@media  only screen and (max-width: 640px)  {
+  
+  #hero .hero-img img {
+    width: 80%;
+    height: 80vh;
+  }
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+  }
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -495,7 +503,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -554,6 +561,7 @@ section {
 --------------------------------------------------------------*/
 .cliens {
   padding: 12px 0;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -630,7 +638,7 @@ section {
 
 .about .content .btn-learn-more:hover {
   background: #47b2e4;
-  color: #fff;
+  color: ;
   text-decoration: none;
 }
 
@@ -771,6 +779,7 @@ section {
 
 .skills .content ul {
   list-style: none;
+  border:none;
   padding: 0;
 }
 
@@ -779,7 +788,7 @@ section {
 }
 
 .skills .content ul i {
-  font-size: 20px;
+  font-size: 40px;
   padding-right: 4px;
   color: #47b2e4;
 }
@@ -793,6 +802,7 @@ section {
   display: block;
   background: none;
   border-radius: 0;
+  border-top:none;
 }
 
 .skills .progress .skill {
@@ -808,6 +818,7 @@ section {
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  border-top:none;
 }
 
 .skills .progress-bar-wrap {
@@ -1088,7 +1099,7 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
+  width: 100px;
   border-radius: 50%;
 }
 
@@ -1383,13 +1394,25 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
+  /**border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
+  */
   padding: 30px;
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
+.contact2 .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+}
+.contact2 .php-email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+}
+
 
 .contact .info i {
   font-size: 20px;
@@ -1641,7 +1664,7 @@ section {
   color: #37517e;
 }
 
-#footer .footer-newsletter form {
+#footer .footer-newsletter .social-links a {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
@@ -1649,6 +1672,18 @@ section {
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
   text-align: left;
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
 
 #footer .footer-newsletter form input[type="email"] {
