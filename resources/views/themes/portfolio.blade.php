@@ -32,7 +32,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="/">Home</a></li>
+          <li><a class="nav-link scrollto " href="/">HOME</a></li>
           <li><a class="nav-link scrollto" href="/about-more">ABOUT</a></li>
           <li><a class="nav-link scrollto" href="/">ACHIEVEMENTS</a></li>
           <li><a class="nav-link scrollto" href="/view-portfolio">GALLERY</a></li>

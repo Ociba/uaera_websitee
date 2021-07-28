@@ -25,7 +25,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:50px;"></h1>
+      <h1 class="logo me-auto"><img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; height:40px;"></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -159,13 +159,9 @@
                     </ul>
                     <h5 style="font-weight:bold;">OUR ACHIEVEMENTS</h5>
                     <ul>
-                        <li>Contribution to social development through reducing
-                            the number of young people not in employment
-                            through enhancing the availability and quality of
-                            gainful employment.
+                        <li>Contribution to social development through reducing the number of young people not in employment through enhancing the availability and quality of gainful employment.
                         </li>
-                        <li>Contribution to our national economy development
-                            through remittances from migrant workers.
+                        <li>Contribution to our country's per capita income is over USD 1.3BN (US Dollars 1 billiion and Three Hundred Million) is remmitted annually by Ugandans working abroad
                         </li>
                         <li>We have enabled Ugandans to acquire skills. All jobs
                             seekers are trained locally at duty stations including
@@ -196,7 +192,7 @@
                             orders for approval.
                         </li>
                     </ul>
-                    <h5 style="font-weight:bold;">Feature of UAERA</h5>
+                    <h5 style="font-weight:bold;">Future of UAERA</h5>
                     <ul>
                         <li>Looking at the future of UAERA, we aim to have the
                             following in place:

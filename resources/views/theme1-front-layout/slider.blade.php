@@ -27,17 +27,17 @@
                 </div>
                 <div class="carousel-item">
                     <img class="d-block img-fluid"
-                        src="{{ asset('admin/design/files/assets/images/slider/slide2.jpg')}}"  style="width:100%; height:400px;"
+                        src="{{ asset('theme1/assets/img/members.png')}}"  style="width:100%; height:400px;"
                         alt="Second slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block img-fluid"
-                        src="{{ asset('admin/design/files/assets/images/slider/slide3.jpg')}}" style="width:100%; height:400px;"
+                        src="{{ asset('theme1/assets/img/members.png')}}" style="width:100%; height:400px;"
                         alt="Third slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block img-fluid"
-                        src="{{ asset('admin/design/files/assets/images/slider/slide4.jpg')}}" style="width:100%; height:400px;"
+                        src="{{ asset('theme1/assets/img/members.png')}}" style="width:100%; height:400px;"
                         alt="Third slide">
                 </div>
             </div>

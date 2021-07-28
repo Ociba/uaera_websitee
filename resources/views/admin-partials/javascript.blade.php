@@ -17,7 +17,7 @@
 <script src="{{ asset('admin/design/files/assets/js/pcoded.min.js')}}"></script>
 <!-- custom js -->
 <script src="{{ asset('admin/design/files/assets/js/vartical-layout.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('admin/design/files/assets/pages/dashboard/custom-dashboard.js')}}"></script>
+{{--<script type="text/javascript" src="{{ asset('admin/design/files/assets/pages/dashboard/custom-dashboard.js')}}"></script>--}}
 <script type="text/javascript" src="{{ asset('admin/design/files/assets/js/script.min.js')}}"></script>
 <script type="text/javascript" src="{{ asset('admin/design/files/assets/pages/todo/todo.js')}}"></script>
 

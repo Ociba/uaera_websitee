@@ -2,7 +2,7 @@
 
     <div class="section-title">
         <h2>Achievements</h2>
-        <p>As a sector, increase in Uganda's foreign earning through remittances by Uganda workers abroad standing at USD 1.3BN globally and USD 700M for those working in the Middle East countries alone.</p>
+        <p>Labour Externalisation sector contribute to Uganda's foreign earning through annual remittances by Ugandan workers abroad which stands at USD 1.3BN globally and USD 700M for those working in the Middle East countries alone.</p>
     </div>
 
     <div class="row text-justify-center" style="text-center;">

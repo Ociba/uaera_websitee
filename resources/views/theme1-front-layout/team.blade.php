@@ -2,40 +2,49 @@
 
     <div class="section-title">
         <h2>Team</h2>
-        <p>We have well experiences and hardworking staff with all qualities of leadership to serve our esteemed Ugandans at any time</p>
+        <p></p>
     </div>
+        <div class="row">
 
-    <div class="row">
-    <div class="row text-center mb-5">
-        <div class="col-lg-3">
-        <div class="d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-2" data-aos="fade-up" data-aos-delay="100">
+           
+          </div>
+           
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="box text-center">
+            <div style="margin-top:-40px;">
+              <h3><img src="{{ asset('theme1/assets/img/team/rusoke.png')}}" height="100" width="80" class="img-flui" alt=""></h3>
+              <p>Maj. Gen. Robert Rusooke</p>
+              <p>UAERA Patron</p>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="box text-center">
+            <div style="margin-top:-40px;">
+              <h3><img src="{{ asset('theme1/assets/img/team/member5.jpg')}}" height="90" width="80" class="img-flui" alt=""></h3>
+              <p>Mr. Baker Akantambira</p>
+              <p>Board Chairperson</p>
+            </div>
+           </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+           
+           </div>
         </div>
-        </div>
-        <div class="col-lg-6">
-        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="{{ asset('theme1/assets/img/team/team2.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="member-info">
-            <h4>Mr. Baker Akantambira</h4>
-            <span>Board Chairperson</span>
+        <div class="row">
+        @foreach($get_members  as $member)
+          <div class="col-lg-3" style="height:200px;" data-aos="fade-up" data-aos-delay="100">
+            <div class="box text-center">
+            <div style="margin-top:-40px;">
+            <img src="{{ asset('members/images/'.$member->image)}}" style="border-radius:50%; height: 80px; width:80px;" alt="">
+              <p>{{$member->name}}</p>
+              <p>{{$member->title}}</p>
             </div>
         </div>
-        </div>
-        <div class="col-lg-3">
-        <div class="d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-        </div>
-        </div>
-        </div>
-         @foreach($get_members  as $member)
-        <div class="col-lg-6">
-        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="{{ asset('members/images/'.$member->image)}}" class="img-fluid" alt=""></div>
-            <div class="member-info">
-            <h4>{{$member->name}}</h4>
-            <span>{{$member->title}}</span>
-            </div>
-        </div>
-        </div>
+          </div>
         @endforeach
-    </div>
+        </div>
 
 </div>

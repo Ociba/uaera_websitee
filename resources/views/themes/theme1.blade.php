@@ -86,8 +86,6 @@
         </style>
     </head>
     <body>
-        <script src="//code.tidio.co/09qppohxl1p0i82npb9r0mqxv6xra6ll.js" async></script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=174468550314600&autoLogAppEvents=1" nonce="RtPqCkj5"></script>
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top">
             @include('theme1-front-layout.menu')
@@ -137,12 +135,12 @@
             </section>
             <!-- End Why Us Section -->
             <!-- ======= Skills Section ======= -->
-            <section id="skills" class="skills section-bg">
+            {{--<section id="skills" class="skills section-bg">
                 @include('theme1-front-layout.skills')
-            </section>
+            </section>--}}
             <!-- End Skills Section -->
             <!-- ======= Services Section ======= -->
-            <section id="services" class="services">
+            <section id="services" class="services section-bg">
                 @include('theme1-front-layout.achievements')
             </section>
             <!-- End Services Section -->
@@ -157,7 +155,7 @@
             </section>
             <!-- End Portfolio Section -->
             <!-- ======= Team Section ======= -->
-            <section id="team" class="team section-bg">
+            <section  id="pricing" class="pricing section-bg">
                 @include('theme1-front-layout.team')
             </section>
             <!-- End Team Section -->
