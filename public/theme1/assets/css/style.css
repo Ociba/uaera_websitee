@@ -877,6 +877,48 @@ section {
 .services .icon-box:hover h4 a {
   color: #47b2e4;
 }
+/*--------------------------------------------------------------
+# Services2
+--------------------------------------------------------------*/
+.services2 .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px 30px;
+  width: 150px;
+  background: #fff;
+}
+
+.services2 .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services2 .icon-box .icon i {
+  color: #47b2e4;
+  font-size: 36px;
+}
+
+.services2 .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #37517e;
+}
+
+.services2 .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services2 .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services2 .icon-box:hover h4 a {
+  color: #47b2e4;
+}
 
 /*--------------------------------------------------------------
 # Cta
@@ -1394,8 +1436,9 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
+  /**border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
+  */
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1663,7 +1706,7 @@ section {
   color: #37517e;
 }
 
-#footer .footer-newsletter form {
+#footer .footer-newsletter .social-links a {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
@@ -1671,6 +1714,18 @@ section {
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
   text-align: left;
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
 
 #footer .footer-newsletter form input[type="email"] {
@@ -1701,7 +1756,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #f3f5fa;
 }
 
 #footer .footer-top .footer-contact {
@@ -1807,6 +1862,7 @@ section {
 #footer .credits {
   float: right;
   font-size: 13px;
+  color:#ffffff;
 }
 
 #footer .credits a {
@@ -1824,5 +1880,6 @@ section {
   }
   #footer .credits {
     padding-top: 4px;
+    color:#ffffff;
   }
 }

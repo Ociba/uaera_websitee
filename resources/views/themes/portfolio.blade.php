@@ -32,18 +32,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/">About</a></li>
-          <li><a class="nav-link scrollto" href="/">Services</a></li>
-          <li><a class="nav-link   scrollto" href="/">Team</a></li>
-          <li><a class="nav-link scrollto" href="/">Careers</a></li>
-          <li><a class="nav-link scrollto" href="/">List of Uaera Members</a></li>
-          <li class="dropdown"><a href="#"><span>Themes</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="/theme-two">Theme2</a></li>
-              <li><a href="/theme-three">Theme3</a></li>
-            </ul>
-          </li>
+          <li><a class="nav-link scrollto " href="/">HOME</a></li>
+          <li><a class="nav-link scrollto" href="/about-more">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="/">ACHIEVEMENTS</a></li>
+          <li><a class="nav-link scrollto" href="/view-portfolio">GALLERY</a></li>
+          <li><a class="nav-link scrollto" href="/">TEAM</a></li>
+          <li><a class="nav-link scrollto" href="/">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -70,108 +64,26 @@
 
     <div class="section-title">
         <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>UAERA regulates and monitors the activities
+                of member agencies together with Ministry of Gender,
+                Labour and Social Development, which is our regulating
+                body that ensures every company is licensed to externalize
+                labour.</p>
         
     </div>
-
-    <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-app">App</li>
-        <li data-filter=".filter-card">Card</li>
-        <li data-filter=".filter-web">Web</li>
-    </ul>
-
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+        @foreach($get_portifolio as $images)
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt=""></div>
+        <div class="portfolio-img"><img src="{{ asset('forlio/images/'.$images->image)}}" style="height:300px; width:400px;" class="img-fluid" alt=""></div>
         <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            <a href="{{ asset('theme1/assets/img/folio2.jpeg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            {{--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>--}}
         </div>
+        <p class="text-center">{{$images->title}}</p>
+        <p class="text-center"><i class="ri-user-fill"></i><span style="color:green;"> Admin  updated {{Carbon\Carbon::parse($images->created_at)->diffForHumans()}}</span> 
+        <img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:15px; max-height:150px;"></p>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>App 2</h4>
-            <p>App</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>Card 2</h4>
-            <p>Card</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-8.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>Web 2</h4>
-            <p>Web</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>App 3</h4>
-            <p>App</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-9.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>Card 1</h4>
-            <p>Card</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-8.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>Card 3</h4>
-            <p>Card</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-8.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-img"><img src="{{ asset('theme1/assets/img/portfolio/portfolio-9.jpg')}}" class="img-fluid" alt=""></div>
-        <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="{{ asset('theme1/assets/img/portfolio/portfolio-9.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-        </div>
+        @endforeach
 
     </div>
 

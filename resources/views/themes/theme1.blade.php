@@ -33,13 +33,14 @@
           
             }
             .dot {
-            height: 6px;
-            width: 6px;
+            height: 10px;
+            width: 10px;
             margin-left: 3px;
             margin-right: 3px;
             margin-top: 2px !important;
             background-color: rgb(207, 23, 23);
             border-radius: 50%;
+            color:#ffffff;
             display: inline-block
             }
             .title:after {
@@ -85,8 +86,6 @@
         </style>
     </head>
     <body>
-        <script src="//code.tidio.co/09qppohxl1p0i82npb9r0mqxv6xra6ll.js" async></script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=174468550314600&autoLogAppEvents=1" nonce="RtPqCkj5"></script>
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top">
             @include('theme1-front-layout.menu')
@@ -109,17 +108,16 @@
                                     <h5>News
                                     </h5>
                                 </div>
+                                
                                 <div class="news">
                                     <marquee class="news-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                                        <span class="dot"></span> 
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto </p>
-                                        </span>
+                                    @foreach($get_news_for_front as $news)
+                                        <p>{{$news->news}}</p>
                                         <span class="dot"></span>
-                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam </p>
-                                        </span>
+                                        @endforeach
                                     </marquee>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -137,12 +135,12 @@
             </section>
             <!-- End Why Us Section -->
             <!-- ======= Skills Section ======= -->
-            <section id="skills" class="skills section-bg">
+            {{--<section id="skills" class="skills section-bg">
                 @include('theme1-front-layout.skills')
-            </section>
+            </section>--}}
             <!-- End Skills Section -->
             <!-- ======= Services Section ======= -->
-            <section id="services" class="services">
+            <section id="services" class="services section-bg">
                 @include('theme1-front-layout.achievements')
             </section>
             <!-- End Services Section -->
@@ -157,7 +155,7 @@
             </section>
             <!-- End Portfolio Section -->
             <!-- ======= Team Section ======= -->
-            <section id="team" class="team section-bg">
+            <section  id="pricing" class="pricing section-bg">
                 @include('theme1-front-layout.team')
             </section>
             <!-- End Team Section -->
