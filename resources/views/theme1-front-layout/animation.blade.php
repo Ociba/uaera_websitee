@@ -9,11 +9,11 @@
   
 }
 </style>
-<section id="hero">
+<section id="hero" class="d-flex align-items-center">
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 d-flex flex-column justify-content-center pt-2 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
         <div class="img-fluid animate" alt="">
                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade"
                     data-ride="carousel">
@@ -67,19 +67,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-im" data-aos="zoom-in" data-aos-delay="200">
-        <a class="twitter-timeline" href="https://twitter.com/UAERAUg?ref_src=twsrc%5Etfw" data-height="457">Tweets by UAERAUg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          {{--<img src="{{ asset('theme1/assets/img/img1.jpg')}}" style="height:475px; width:100%" class="img-fluid animate" alt="">--}}
-
-          {{--<iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/UAERAUganda" scrolling="yes" style="border:none; overflow:hidden; width:600px; height:430px; background: white; float:left; " allowtransparency="true" frameborder="0"></iframe>--}}
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <a class="twitter-timeline" href="https://twitter.com/UAERAUg?ref_src=twsrc%5Etfw" data-height="457">Tweets by UAERAUg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
 
-</section>
-<script type="text/javascript" src="{{ asset('admin/design/files/bower_components/owl.carousel/dist/owl.carousel.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('admin/design/files/assets/js/owl-custom.js')}}"></script>
-<!-- swiper js -->
-<script type="text/javascript" src="{{ asset('admin/design/files/bower_components/swiper/package/js/swiper.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('admin/design/files/assets/js/swiper-custom.js')}}"></script>
+  </section><!-- End Hero -->
+
 @include('admin-partials.javascript')

@@ -101,7 +101,7 @@
                     <div class="dropdown-primary dropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
                         <img src="{{ asset('assets/img/loho.jpg')}}" style="border-radius:50%; width:40px; max-height:40px;">
-                            <span>Ociba James</span>
+                            <span>{{auth()->user()->name}}</span>
                             <i class="feather icon-chevron-down"></i>
                         </div>
                         <ul class="show-notification profile-notification dropdown-menu"

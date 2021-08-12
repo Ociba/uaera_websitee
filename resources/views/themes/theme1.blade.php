@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        @include('theme1-front-layout.css')
-        
-        <style>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  @include('theme1-front-layout.css')
+  <style>
             /*news*/
             @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
             a {
@@ -84,22 +84,19 @@
             animation: rightcrawl 10s linear infinite;
             }
         </style>
-    </head>
-    <body>
-        <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top">
-            @include('theme1-front-layout.menu')
-        </header>
-        <!-- End Header -->
-        <!-- ======= Hero Section ======= -->
-        <section id="hero" class="d-flex align-items-center">
-            @include('theme1-front-layout.animation')
-        </section>
-        
-        <!-- End Hero -->
-        <main id="main">
-            <!-- ======= Cliens Section ======= -->
-            <section id="cliens" class="cliens">
+</head>
+
+<body>
+
+@include('theme1-front-layout.menu')
+
+  <!-- ======= Hero Section ======= -->
+  @include('theme1-front-layout.animation')
+ <!-- End Hero -->
+
+ <main id="main">
+ <!-- ======= Cliens Section ======= -->
+ <section id="cliens" class="cliens">
                 <div class="container mt-2 pb-3 m-0">
                     <div class="row" data-aos="zoom-in">
                         <div class="col-md-12">
@@ -124,26 +121,17 @@
                 </div>
             </section>
             <!-- End Cliens Section -->
-            <!-- ======= About Us Section ======= -->
-            <section id="about" class="about section-bg">
-                @include('theme1-front-layout.about')
-            </section>
-            <!-- End About Us Section -->
-            <!-- ======= Why Us Section ======= -->
-            <section id="contact2" class="contact2">
-                @include('theme1-front-layout.jobs-abroad')
-            </section>
-            <!-- End Why Us Section -->
-            <!-- ======= Skills Section ======= -->
-            {{--<section id="skills" class="skills section-bg">
-                @include('theme1-front-layout.skills')
-            </section>--}}
-            <!-- End Skills Section -->
-            <!-- ======= Services Section ======= -->
-            <section id="services" class="services section-bg">
+ <section id="about" class="about section-bg">
+      @include('theme1-front-layout.about')
+  </section>
+  <section id="about" class="about">
+      @include('theme1-front-layout.abroad-jobs')
+  </section>
+  <!-- ======= Why Us Section ======= -->
+       <section id="services" class="services section-bg">
                 @include('theme1-front-layout.achievements')
             </section>
-            <!-- End Services Section -->
+            <!-- End Why Us Section -->
             <!-- ======= Cta Section ======= -->
             <section id="cta" class="cta">
                 @include('theme1-front-layout.call-action')
@@ -164,12 +152,14 @@
                 @include('theme1-front-layout.contact')
             </section>
             <!-- End Contact Section -->
-        </main>
+ </main>
         <!-- End #main -->
-        <!-- ======= Footer ======= -->
         @include('theme1-front-layout.footer')
         <!-- End Footer -->
         @include('theme1-front-layout.preloader')
         <!-- Vendor JS Files -->
         @include('theme1-front-layout.javascript')
+
+</body>
+
 </html>

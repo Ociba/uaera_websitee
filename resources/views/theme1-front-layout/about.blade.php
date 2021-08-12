@@ -70,7 +70,12 @@
         </div>
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-        <p class="text-center"><a href="/about-more" class="btn-learn-more text-center">Read More</a></p>
+        <p class="text-center"><a href="/about-more" class="btn-learn-more text-center mb-4">Read More</a><br>
+        <a class="" href="https://www.facebook.com/UAERAUganda/"><span style="color:blue;" width="20" height="16" fill="currentColor" class="bi bi-facebook"></span></a>
+        <a class="" href="https://twitter.com/uaeraug"><span style="color:blue;" width="16" height="16" fill="currentColor" class="bi bi-twitter"></span></a>
+        <a class="" href="https://www.youtube.com/channel/UCTUSeTOZIUdnc_NCFRVBjhw"><span style="color:blue;" width="16" height="16" fill="currentColor" class="bi bi-youtube"></span></a>
+        </p>
+       
         </div>
         <div class="col-lg-4"></div>
     </div>

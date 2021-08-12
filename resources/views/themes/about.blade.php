@@ -37,6 +37,13 @@
           <li><a class="nav-link scrollto" href="/view-portfolio">GALLERY</a></li>
           <li><a class="nav-link scrollto" href="/">TEAM</a></li>
           <li><a class="nav-link scrollto" href="/">CONTACT</a></li>
+          <li class="dropdown"><a href="#"><span>OPPORTUNITIES</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/career-jobs">Career</a></li>
+              {{--<li><a href="/jobs">Consultancy Services</a></li>--}}
+            </ul>
+         </li>
+         <li><a class="nav-link scrollto" href="/publications">MEDIA</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

@@ -13,7 +13,9 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\AuthenticationController;
-use App\Http\Controllers\HomeCOntroller;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\JobsController;
+use App\Http\Controllers\MediaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,16 +28,16 @@ use App\Http\Controllers\HomeCOntroller;
 |
 */
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/admin-dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->name('dashboard');
 
 
 
 Route::get('/',[FrontController::Class,'getFrontPage']);
 Route::get('/theme-two', function() { return view('themes.theme2');});
 Route::get('/theme-three', function() { return view('themes.theme3');});
-Route::get('/dashboard',[HomeCOntroller::Class,'getDashboard'])->name('Dashboard');
+Route::get('/admin-dashboard',[HomeController::Class,'getDashboard'])->name('Dashboard');
 Route::get('/news',[NewsController::Class,'index'])->name('News');
 Route::get('/achievements',[AchievementsController::Class,'getAchievements'])->name('Adverts');
 Route::get('/about',[AboutController::Class,'aboutInformation'])->name('About');
@@ -67,3 +69,10 @@ Route::get('/update-member/{id}',[TeamController::Class, 'updateTeam']);
 Route::get('/delete-member/{id}', [TeamController::Class, 'deleteTeam']);
 
 Route::get('/log-out',[AuthenticationController::Class, 'logoutUser']);
+Route::get('/career-jobs',[JobsController::Class, 'getJobs'])->name('Jobs');
+Route::get('/publications',[MediaController::Class,'getMedia'])->name('Media Publications');
+Route::get('/media',[MediaController::Class,'getAdminMedia'])->name('Media');
+Route::get('/create-media',[MediaController::Class,'validateCreateMediaPublication']);
+Route::get('/edit-media/{id}',[MediaController::Class,'editMediaPublication']);
+Route::get('/update-media/{id}',[MediaController::Class,'updateMediaPublication']);
+Route::get('/delete-media/{id}',[MediaController::Class,'deleteMediaPublication']);

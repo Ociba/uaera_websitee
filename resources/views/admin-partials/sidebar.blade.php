@@ -2,7 +2,7 @@
     <div class="pcoded-inner-navbar main-menu">
         <div class="pcoded-navigatio-lavel">Navigation</div>
         <ul class="pcoded-item pcoded-left-item">
-            <li @if(request()->route()->getName() == 'Dashboard')class="active pcoded-trigger" @endif class="pcoded-trigger">
+            <li @if(request()->route()->getName() == 'Dashboard')class="active pcoded-trigger" @endif>
                 <a href="/dashboard">
                     <span class="pcoded-micon text-info"><i class="feather icon-home"></i></span>
                     <span class="active pcoded-mtext">Dashboard</span>
@@ -30,6 +30,12 @@
                 <a href="/team">
                     <span class="pcoded-micon"><i class="fa fa-user"></i></span>
                     <span class="active pcoded-mtext">Team</span>
+                </a>
+            </li>
+            <li @if(request()->route()->getName() == 'Media')class="active pcoded-trigger" @endif class="pcoded-trigger">
+                <a href="/media">
+                    <span class="pcoded-micon"><i class="fa fa-user"></i></span>
+                    <span class="active pcoded-mtext">Media</span>
                 </a>
             </li>
         </ul>

@@ -24,7 +24,7 @@
 
                                     <div class="page-body">
                                         <div class="row">
-                                            <div class="col-sm-12">
+                                            <div class="col-12">
                                                 <div class="row">
                                                 @include('admin-partials.cards')
                                                 </div>
@@ -43,6 +43,7 @@
             </div>
         </div>
     </div>
+    @include('admin-partials.javascript')
 </body>
-@include('admin-partials.javascript')
+
 </html>
