@@ -31,22 +31,22 @@
                         <div class="carousel-item active">
                             <img class="d-block img-fluid"
                                 
-                                src="{{ asset('theme1/assets/img/members.png')}}"  width="800" height="200" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;"
+                                src="{{ asset('theme1/assets/img/members.png')}}"  style="padding: 0px; scrollbar-width: 0px; margin-right:0px; width:800px; height:390px"
                                 alt="First slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                                src="{{ asset('theme1/assets/img/members2.png')}}" width="800" height="1000"
+                                src="{{ asset('theme1/assets/img/members2.png')}}" style="width:800px; height:390px;"
                                 alt="Second slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                                src="{{ asset('theme1/assets/img/img4.png')}}" width="800" height="350"
+                                src="{{ asset('theme1/assets/img/img4.png')}}" style="width:800px; height:390px;"
                                 alt="Third slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                            src="{{ asset('theme1/assets/img/img2.png')}}"  width="800" height="200" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;" 
+                            src="{{ asset('theme1/assets/img/img2.png')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
                                 alt="Fourth slide">
                         </div>
                     </div>
@@ -67,8 +67,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <a class="twitter-timeline" href="https://twitter.com/UAERAUg?ref_src=twsrc%5Etfw" data-height="457">Tweets by UAERAUg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="col-lg-6 pt-5 pt-lg-0 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <a class="twitter-timeline" style="width:800px; height:390px;" href="https://twitter.com/UAERAUg?ref_src=twsrc%5Etfw" data-height="440">Tweets by UAERAUg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>

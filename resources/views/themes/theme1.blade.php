@@ -143,7 +143,7 @@
             </section>
             <!-- End Portfolio Section -->
             <!-- ======= Team Section ======= -->
-            <section  id="pricing" class="pricing section-bg">
+            <section  id="team" class="pricing section-bg">
                 @include('theme1-front-layout.team')
             </section>
             <!-- End Team Section -->

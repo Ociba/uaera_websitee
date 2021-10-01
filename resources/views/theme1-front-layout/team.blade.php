@@ -33,7 +33,7 @@
            
            </div>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
         @foreach($get_members  as $member)
           <div class="col-lg-3" style="height:200px;" data-aos="fade-up" data-aos-delay="100">
             <div class="box text-center">

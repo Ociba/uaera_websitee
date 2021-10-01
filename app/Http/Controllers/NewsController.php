@@ -30,7 +30,8 @@ class NewsController extends Controller
      * This function shows the news in th e front pages
     */
     protected function getnews(){
-        $get_news_for_front =News::latest()->limit('4')->get();
+        $get_news_for_front =News::join('users','news.created_by','users.id')
+        ->select('news.news')->where('news.status','ongoing')->latest()->limit('4')->get();
         return view('themes.theme1',compact('get_news_for_front'));
     }
     /** 
@@ -52,8 +53,8 @@ class NewsController extends Controller
     /** 
      * This function deletes new softly
     */
-    protected function deleteNews($news_id){
-        News::where('id', $news_id)->update(array('status'=>'deleted'));
+    protected function deleteNews($id){
+        News::where('id', $id)->delete();
         return redirect()->back()->with('msg','News has been deleted successful');
     }
 }
