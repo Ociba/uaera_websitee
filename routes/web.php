@@ -32,7 +32,7 @@ use App\Http\Controllers\MediaController;
 //     return Inertia::render('Dashboard');
 // })->name('dashboard');
 
-
+Route::get('/register',function() { return redirect('/login');});
 
 Route::get('/',[FrontController::Class,'getFrontPage']);
 Route::get('/theme-two', function() { return view('themes.theme2');});
