@@ -41,12 +41,17 @@
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                                src="{{ asset('theme1/assets/img/img4.png')}}" style="width:800px; height:390px;"
+                                src="{{ asset('theme1/assets/img/new2.jpg')}}" style="width:800px; height:390px;"
                                 alt="Third slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                            src="{{ asset('theme1/assets/img/img2.png')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
+                            src="{{ asset('theme1/assets/img/new1.jpg')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
+                                alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                            src="{{ asset('theme1/assets/img/new3.jpg')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
                                 alt="Fourth slide">
                         </div>
                     </div>
