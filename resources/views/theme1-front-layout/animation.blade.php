@@ -26,6 +26,12 @@
                             data-slide-to="2"></li>
                         <li data-target="#carouselExampleIndicators"
                             data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="4"></li> 
+                            <li data-target="#carouselExampleIndicators"
+                            data-slide-to="5"></li> 
+                            <li data-target="#carouselExampleIndicators"
+                            data-slide-to="6"></li> 
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
@@ -33,6 +39,21 @@
                                 
                                 src="{{ asset('theme1/assets/img/members.png')}}"  style="padding: 0px; scrollbar-width: 0px; margin-right:0px; width:800px; height:390px"
                                 alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                            src="{{ asset('theme1/assets/img/uaera2.jpg')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
+                                alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                            src="{{ asset('theme1/assets/img/uaera3.JPG')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
+                                alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                            src="{{ asset('theme1/assets/img/uaera4.JPG')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
+                                alt="Fourth slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
@@ -53,7 +74,7 @@
                             <img class="d-block img-fluid"
                             src="{{ asset('theme1/assets/img/new3.jpg')}}" style="padding: 0px; scrollbar-width: 0px; margin-right:0px;width:800px; height:390px;" 
                                 alt="Fourth slide">
-                        </div>
+                        </div>                       
                     </div>
                     <a class="carousel-control-prev"
                         href="#carouselExampleIndicators" role="button"

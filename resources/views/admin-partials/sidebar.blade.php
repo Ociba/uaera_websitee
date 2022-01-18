@@ -38,6 +38,12 @@
                     <span class="active pcoded-mtext">Media</span>
                 </a>
             </li>
+            <li @if(request()->route()->getName() == 'Reports')class="active pcoded-trigger" @endif class="pcoded-trigger">
+                <a href="/view-all-reports">
+                    <span class="pcoded-micon"><i class="fa fa-user"></i></span>
+                    <span class="active pcoded-mtext">Reports</span>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>

@@ -6,32 +6,23 @@
     </div>
         <div class="row">
 
-          <div class="col-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
            
           </div>
            
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
           <div class="box text-center">
             <div style="margin-top:-40px;">
-              <h3><img src="{{ asset('theme1/assets/img/team/rusoke.png')}}" height="100" width="80" class="img-flui" alt=""></h3>
-              <p>Maj. Gen. Robert Rusooke</p>
-              <p>UAERA Patron</p>
-            </div>
-           </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <div class="box text-center">
-            <div style="margin-top:-40px;">
-              <h3><img src="{{ asset('theme1/assets/img/team/member5.jpg')}}" height="90" width="80" class="img-flui" alt=""></h3>
+              <h3><img src="{{ asset('theme1/assets/img/team/baker.png')}}" style="border-radius:50%; height: 90px; width:100px;" class="img-flui" alt=""></h3>
               <p>Mr. Baker Akantambira</p>
               <p>Board Chairperson</p>
             </div>
            </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-           
-           </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          
+          </div>
         </div>
         <div class="row d-flex justify-content-center">
         @foreach($get_members  as $member)

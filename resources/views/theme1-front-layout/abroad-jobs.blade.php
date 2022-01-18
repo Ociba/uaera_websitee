@@ -29,7 +29,7 @@
         <div class="col-lg-6 text-center">
         <h2 class="blinking font-weight-900 ">For Approved Jobs Abroad</h2>
         <br>
-              <a href="https://eeimis.mglsd.go.ug/companies" class="click">Click here </a>
+              <a href="https://eemis.mglsd.go.ug/companies" class="click">Click here </a>
         </div>
     </div>
 </div>

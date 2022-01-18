@@ -51,45 +51,38 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main mt-5">
+  <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
-        {{--<ol>
-          <li><a href="/"><span style="color:black;">Home</span></a></li>
+        <ol>
+          <li><a href="/">Home</a></li>
           <li>{{ (request()->route()->getName()) }}</li>
-        </ol>--}}
+        </ol>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section id="portfolio" class="inner-page portfolio">
+    <section class="inner-page" style="margin-top:-50px">
       <div class="container">
-
-    <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>UAERA regulates and monitors the activities
-                of member agencies together with Ministry of Gender,
-                Labour and Social Development, which is our regulating
-                body that ensures every company is licensed to externalize
-                labour.</p>
-        
-    </div>
-    <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-        @foreach($get_portifolio as $images)
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-img"><img src="{{ asset('forlio/images/'.$images->image)}}" style="height:300px; width:400px;" class="img-fluid" alt=""></div>
-        
-        <p class="text-center">{{$images->title}}</p>
+            <div class="section-title">
+                <h2>Reports</h2>
+            </div>
+            <div class="row content justify-center" style="text-align: justify;">
+                <div class="col-lg-12">
+                  @foreach($get_reports as $report)
+                    <hr>
+                    <p>{{$report->title}} | <a href="{{asset('Reports/'.$report->report)}}" target="_blank">View  Report</a>
+                    </p>
+                    <p>{{ $report->created_at}} <i class="fa fa-user"></i> By Admin</p>
+                    <hr>
+                    @endforeach
+                </div>
+            </div>
         </div>
-        @endforeach
-    </div>
-
-</div>
-</section>
-    
+    </section>
 
   </main><!-- End #main -->
 

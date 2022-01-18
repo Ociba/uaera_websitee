@@ -16,10 +16,10 @@
             <li><a class="nav-link scrollto" href="#services">ACHIEVEMENTS</a></li>
             <li><a class="nav-link scrollto" href="#team">TEAM</a></li>
             <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
-            <li class="dropdown"><a href="#"><span>OPPORTUNITIES</span> <i class="bi bi-chevron-down"></i></a>
+            <li class="dropdown"><a href="#"><span>Reports</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
+                <li><a href="/reports">Reports</a></li>
                 <li><a href="/career-jobs">Career</a></li>
-                {{--<li><a href="/consultancy">Consultancy Services</a></li>--}}
                 </ul>
             </li>
             <li><a class="nav-link scrollto" href="/publications">MEDIA</a></li>
