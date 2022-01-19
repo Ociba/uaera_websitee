@@ -43,17 +43,29 @@ class ReportController extends Controller
    */
   protected function editReport($report_id){
     $get_report_to_edit =Report::where('id',$report_id)->get();
-    return view('admin.edit-report',compact('get_report_to_edit'));
+    return view('admin.edit-reports',compact('get_report_to_edit'));
 }
 protected function updateReport($report_id){
     Report::where('id',$report_id)->update(array(
         'title' =>request()->title,
-        'report'  =>request()->report,
+        'report'  =>$this->saveReport(),
     ));
     return redirect()->back()->with('msg','You have Updated  Info Successfully');
 }
 protected function deleteReport($report_id){
     Report::where('id',$report_id)->delete();
     return redirect()->back()->with('msg','You have Deleted Team Member Successfully');
+}
+/**
+ * This function validates create media publication
+ */
+protected function validateCreateReport(){
+    if(empty(request()->title)){
+        return redirect()->back()->withErrors('Title is needed to continue');
+    }elseif(empty(request()->report)){
+        return redirect()->back()->withErrors('Report is needed to continue');
+    }else{
+        return $this->addReport();
+    }
 }
 }

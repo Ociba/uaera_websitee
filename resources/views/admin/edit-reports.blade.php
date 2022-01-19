@@ -26,42 +26,27 @@
                                         <!-- Zero config.table start -->
                                         <div class="card">
                                                     <div class="card-header text-right">
-                                                        <h5><button 
-                                                                    class="btn btn-primary input-group-addon" data-toggle="modal"
-                                                                    data-target="#large-Modal">Add
-                                                                    Report</button></h5>
+                                                        <h5>Edit Report</h5>
 
                                                     </div>
                                                     <div class="card-block">
-                                                        <div class="dt-responsive table-responsive">
-                                                            <table id="simpletable"
-                                                                class="table table-striped table-bordered nowrap">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Title</th>
-                                                                        <th>Report</th>
-                                                                        <th>Option</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    @foreach($get_reports as $report)
-                                                                    <tr>
-                                                                        <td>{{$report->title}}</td>
-                                                                        <td><a href="{{asset('Reports/'.$report->report)}}" target="_blank" style="color:blue;">View Report</a></td>
-                                                                        <td>
-                                                                        <a href="/edit-report/{{$report->id}}" button 
-                                                                    class="btn btn-primary m-b-0" >Edit
-                                                                    </button></a>
-                                                                    <a href="/delete-report/{{$report->id}}"button
-                                                                    class="btn btn-danger m-b-0">Delete
-                                                                    </button></a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    @endforeach
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                                    @foreach($get_report_to_edit as $report)
+                                                    <form action="/update-reports/{{$report->id}}" method="post" enctype="multipart/form-data">
+                                                        @csrf
+                                                        <p><label>Report</label>
+                                                            <input type="file" name="report" class="form-control" required>
+                                                        </p> 
+                                                            <p> <label>Title</label>
+                                                                <input type="text"  class="form-control" name="title" value="{{$report->title}}" required></p>
+                                                            <div class="text-center">
+                                                            <a href="/view-all-reports" class="btn btn-warning">Back</a>
+                                                            <button type="submit"
+                                                                class="btn btn-primary waves-effect waves-light ">Save
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                        @endforeach
+                                                     </div>
                                                 </div>
                                                 <!-- Zero config.table end -->
                                     </div>
@@ -101,10 +86,10 @@
                 <form action="/add-report" method="post" enctype="multipart/form-data">
                 @csrf
                 <p><label>Report</label>
-                    <input type="file" name="report" class="form-control" required>
+                    <input type="file" name="report" class="form-control" >
                 </p> 
                     <p> <label>Title</label>
-                        <textarea type="text" rows="4" class="form-control" name="title" required></textarea></p>
+                        <textarea type="text" rows="4" class="form-control" name="title" ></p>
                     <div class="text-center">
                     <button type="submit"
                         class="btn btn-primary waves-effect waves-light ">Save

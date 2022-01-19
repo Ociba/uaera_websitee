@@ -80,7 +80,7 @@ Route::get('/delete-media/{id}',[MediaController::Class,'deleteMediaPublication'
 
 Route::get('/reports',[ReportController::Class,'viewReport'])->name('Reports');
 Route::get('/view-all-reports',[ReportController::Class,'getReports'])->name('Reports');
-Route::post('add-report',[ReportController::Class,'addReport'])->name('Reports Form');
+Route::post('add-report',[ReportController::Class,'validateCreateReport'])->name('Reports Form');
 Route::get('edit-report/{report_id}',[ReportController::Class,'editReport'])->name('Edit Reports');
-Route::get('update-reports/{report_id}',[ReportController::Class,'updateReport']);
+Route::post('update-reports/{report_id}',[ReportController::Class,'updateReport']);
 Route::get('delete-report/{report_id}',[ReportController::Class,'deleteReport']);
